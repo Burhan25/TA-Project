@@ -1,0 +1,91 @@
+.containerpdf {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    justify-content: center;
+}
+
+.pdf-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    display: flex;
+    width: 250px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.pdf-item {
+    width: 800px;
+    height: auto;
+}
+
+.pdf-item p {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+    margin-top: 20px;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    width: 200px;
+    margin: 10px;
+    display: inline-block;
+}
+.card img {
+    width: 50px;
+    height: 50px;
+}
+.card button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.card button:hover {
+    background-color: #0056b3;
+}
+
+.CardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    justify-content: center;
+}
+
+.card img {
+    width: 80px;
+    height: auto;
+}
+
+
+.btn-thin {
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 3px;
+    background-color: #00BFFF; /* Warna tombol sesuai dengan kode warna yang diinginkan */
+    color: white;
+    text-decoration: none;
+    border: 1px solid #00BFFF; /* Warna border sesuai dengan kode warna yang diinginkan */
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn-thin:hover {
+    background-color: #1E90FF; /* Warna hover yang lebih gelap untuk kontras */
+    border-color: #1E90FF; /* Warna border hover yang lebih gelap untuk kontras */
+}

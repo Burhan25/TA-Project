@@ -1,0 +1,406 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.dropdown {
+    display: flex;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+.container-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+    margin: 20px;
+    box-sizing: border-box;
+}
+
+.avatar img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+}
+
+h2 {
+    margin: 10px 0 5px;
+    font-size: 1.5em;
+    color: #333;
+    align-items: center;
+}
+
+p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.info {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.info-item img {
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+}
+
+.info-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.info-text span {
+    font-weight: bold;
+}
+
+button {
+    background-color: #009669;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #20c056;
+}
+
+.online-status {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.online-status span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #4caf50;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.offline-status {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.offline-status span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #f70000;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.game-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 350px;
+    align-items: center;
+    margin: 40px;
+    display: flex;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Tambahkan efek bayangan */
+    transition: box-shadow 0.3s ease; /* Tambahkan transisi untuk efek bayangan */
+}
+
+/* Tambahkan efek bayangan ketika hover */
+.game-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Atur tata letak konten dalam kartu */
+.game-card-content {
+    text-align: center;
+}
+.game-card-image-container {
+    position: relative;
+}
+
+.game-card-image {
+    margin-top: 10px;
+    width: 95%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.game-card:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, #f8f8f8, #eaedea);
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.description {
+    padding: 10px;
+    text-align: left;
+    margin: 5px;
+    gap: 12px;
+    display: flex;
+    flex-direction: column;
+    color: #373b59;
+    max-width: fit-content;
+}
+.description > .game-title {
+    margin: 0;
+    font-size: 18px;
+    padding-left: 50px;
+    text-align: center;
+}
+.description > .game-description {
+    margin: 0;
+    font-size: 14px;
+}
+
+.game-card:hover .description .game-title,
+.game-card:hover .description .game-description,
+.game-card:hover .release {
+    color: white; /* Mengubah warna teks menjadi putih saat hover */
+}
+.game-card-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+
+    padding: 20px;
+}
+.dropdown-container {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.form-select {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-left: 10px;
+}
+.form-select:focus {
+    border-color: #28a745;
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+}
+.form-label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #28a745;
+    display: flex;
+    align-items: center;
+}
+.form-label i {
+    margin-right: 5px;
+}
+
+@media screen and (max-width: 600px) {
+    .info {
+        margin: 20px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .info-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .info-item img {
+        margin-right: 10px;
+        width: 24px;
+        height: 24px;
+    }
+
+    .info-text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .info-text span {
+        font-weight: bold;
+    }
+
+    button {
+        background-color: #009669;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 1em;
+    }
+
+    button:hover {
+        background-color: #20c056;
+    }
+
+    .description {
+        padding: 10px;
+        text-align: left;
+        margin: 5px;
+
+        display: flex;
+        flex-direction: column;
+        color: #373b59;
+        max-width: fit-content;
+    }
+    .description > .game-title {
+        margin: 0;
+        font-size: 12px;
+        padding-left: 10px;
+        text-align: center;
+    }
+    .description > .game-description {
+        margin: 0;
+        font-size: 10px;
+    }
+
+    .game-card:hover .description .game-title,
+    .game-card:hover .description .game-description,
+    .game-card:hover .release {
+        color: white; /* Mengubah warna teks menjadi putih saat hover */
+    }
+    .game-card-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10px;
+
+        padding: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .game-card {
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        width: 800px;
+        align-items: center;
+        margin: 40px;
+        display: flex;
+        background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Tambahkan efek bayangan */
+        transition: box-shadow 0.3s ease; /* Tambahkan transisi untuk efek bayangan */
+    }
+
+    /* Tambahkan efek bayangan ketika hover */
+    .game-card:hover {
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Atur tata letak konten dalam kartu */
+    .game-card-content {
+        text-align: center;
+    }
+    .game-card-image-container {
+        position: relative;
+    }
+
+    .game-card-image {
+        margin-top: 10px;
+        width: 95%;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
+    .game-card:hover {
+        transform: scale(1.1);
+        transition: transform 0.3s ease;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        background: linear-gradient(135deg, #4caf50, #2196f3);
+        color: #ffffff;
+        cursor: pointer;
+    }
+}
+
+.dropdown {
+    display: flex;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+.dropdown-toggle i {
+    margin-right: 8px; /* Adjust the space as needed */
+}
+
+.paramedik-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    color: #333; /* Warna teks */
+}
+
+.paramedik-info {
+    font-size: 18px;
+    margin: 5px 0 0 0;
+    padding: 0;
+    color: #666; /* Warna teks */
+}
+
+.game-title {
+    text-align: center; /* Menyelaraskan teks ke tengah */
+}
+
+/* Tambahkan ke file CSS Anda */
+.dropdown-toggle {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    font-size: 16px;
+}
+
+.dropdown-menu {
+    min-width: 200px; /* atau sesuai kebutuhan */
+    padding: 10px 0; /* padding untuk mengatur ruang dalam dropdown */
+}
+
+.dropdown-item {
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #333;
+    text-align: left;
+    transition: background-color 0.3s;
+}
+
+.dropdown-item:hover {
+    background-color: #f1f1f1;
+    color: #000;
+}
+
+.dropdown-menu > li {
+    margin-bottom: 5px;
+}
+
+.dropdown-menu > li:last-child {
+    margin-bottom: 0;
+}
